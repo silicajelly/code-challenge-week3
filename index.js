@@ -6,13 +6,13 @@ fetch("http://localhost:3001/films")
       let title = data[i].title;
       let runtime = data[i].runtime;
       let showtime = data[i].showtime;
-      let availableTickets = data[i].availableTickets;
-      document.querySelector(".Shoestore").innerHTML+=`
+      let Availableticket = data[i].availableticket;
+      document.querySelector(".Movielist").innerHTML+=`
           <p>${title}</p>
          <p>${runtime}</p>
          <p>${showtime}</p>
-         <p>${Availableticket}
-         <img src='${poster}'>
+         <p>${Availableticket}</p>
+         <img src="${poster}">
          `;
      }
         })
