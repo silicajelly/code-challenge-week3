@@ -1,12 +1,12 @@
 import './App.css';
-import LoginForm from './components/LoginForm';
-import TransactionList from './components/transaction';
+import Form from './components/Form';
+import TransactionList from './components/TransactionList';
 
 function App() {
   return (
     <div className="App">
+      <Form/>
       <TransactionList/>
-      <LoginForm/>
     </div>
   );
 }

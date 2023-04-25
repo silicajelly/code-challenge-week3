@@ -1,13 +1,14 @@
 import React from 'react'
 import { useState , useEffect } from 'react';
-function Transaction(){
+function TransactionList(){
     // const [selectedTransactions, setSelectedTransactions] = useState("All");
- const [Transactions, setTransactions] = useState([]);
+ const [transactions, setTransactions] = useState([]);
+ 
     useEffect(() =>
  {
-   fetch("http://localhost:3000/transactions")
+   fetch("http://localhost:8001/transactions")
      .then((r) => r.json())
-     .then((data) => setTransactions(data));
+     .then((transactions) => setTransactions(transactions));
  }, [])
     return (<div className="Trans">
     <h1>Transactions</h1>
@@ -24,8 +25,8 @@ function Transaction(){
         </tr>
       </thead>
       <tbody>
-    {transaction.map(transaction => (
-          <tr key={transaction.id}>
+    {transactions.map((transaction ,i)=> (
+          <tr key={i}>
             <td>{transaction.id}</td>
             <td>{transaction.date}</td>
             <td>{transaction.description}</td>
@@ -38,4 +39,4 @@ function Transaction(){
    </div>
     )
         }
-        export default Transaction;
+        export default TransactionList;
