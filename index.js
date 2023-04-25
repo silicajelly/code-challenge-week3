@@ -4,6 +4,7 @@ fetch("http://localhost:3001/films")
 
      for(let i=0;i<data.length;i++){
       let title = data[i].title;
+      let poster = data[i].poster;
       let runtime = data[i].runtime;
       let showtime = data[i].showtime;
       let Availableticket = data[i].availableticket;
