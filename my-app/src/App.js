@@ -1,14 +1,20 @@
+import React from 'react';
 import './App.css';
-import Form from './components/Form';
-import TransactionList from './components/TransactionList';
+import AddTransaction from './components/myForm'; 
+import NavBar from './components/NavBar';
+import TransactionTable from './components/transactionList';
 
 function App() {
-  return (
-    <div className="App">
-      <Form/>
-      <TransactionList/>
-    </div>
-  );
+  return(
+   <div className='App'>
+    <TransactionTable/>
+     <AddTransaction/>
+     <NavBar/>
+   </div>
+
+  )
+
+
 }
 
 export default App;

@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+table{
+  background-color: rgb(147, 150, 150);
+  width: 100%;
+}
+tr:hover {background-color: rgb(168, 168, 168);}
+
+
+#edit-btn{
+  background-color: rgb(0, 0, 0);
+}
