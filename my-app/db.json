@@ -118,6 +118,13 @@
       "category": "income",
       "amount": "1000",
       "id": 17
+    },
+    {
+      "date": "",
+      "description": "",
+      "category": "",
+      "amount": "",
+      "id": 18
     }
   ]
 }
